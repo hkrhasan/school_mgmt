@@ -15,7 +15,7 @@
                 </p>
                 <form>
                     <div class="auth__input-wrapper">
-                        <input type="text" name="username" placeholder="Username" class="auth__input">
+                        <input type="text" name="username" placeholder="Username" class="auth__input" autofocus>
                         <small class="auth__input-error"></small>
                     </div>
                     <div class="auth__input-wrapper">
