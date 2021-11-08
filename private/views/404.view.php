@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<?php $this->view('includes/header'); ?>
 </head>
 
 <body>
-    <h1>404 Not Found</h1>
-</body>
+    <h1>404 | Page Not Found..</h1>
 
-</html>
+    <?php $this->view('includes/footer'); ?>
