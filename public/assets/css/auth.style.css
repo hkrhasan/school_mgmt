@@ -1,0 +1,141 @@
+/* ============== LOGIN PAGE ================= */
+.auth{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.auth__container{
+    width: 20rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth__form-wrapper{
+    width: 95%;
+}
+
+.auth__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.auth__policy{
+    font-size: var(--smaller-font);
+    color: var(--text-color);
+    margin-bottom: var(--mb-2);
+}
+
+.auth__input-wrapper-checkbox{
+    margin-bottom: var(--mb-1-5);
+}
+
+.auth__label-check{
+    cursor: pointer;
+    font-size: var(--smaller-font);
+}
+
+.auth__input-wrapper{
+    margin-bottom: var(--mb-0-5);
+}
+
+.auth__input{
+    width: 100%;
+    padding: .8rem;
+    outline: none;
+    border: 1px solid var(--text-color-light);
+    border-radius: .25rem;
+    transition: .4s;
+    background-color: var(--body-color);
+}
+
+.auth__input:focus{
+    background-color: var(--container-color);
+    border: 1px solid var(--first-color);
+}
+
+.auth__input:hover{
+    border: 1px solid var(--first-color);
+    background-color: var(--container-color);
+}
+
+.auth__input-error{
+    font-size: var(--smaller-font);
+    color: var(--warning-color);
+}
+
+.auth__button{
+    width: 100%;
+    padding: .8rem;
+    background-color: var(--first-color);
+    color: var(--body-color);
+    border: none;
+    outline: none;
+    border-radius: .25rem;
+    transition: .4s;
+    margin-top: var(--mb-0-5);
+    margin-bottom: var(--mb-1);
+}
+
+.auth__button:hover{
+    opacity: .8;
+}
+
+.navigation_url{
+    font-size: var(--smaller-font);
+    color: var(--text-color);
+}
+
+/* ================= BREAKPOINTS ================= */
+
+/* For small devices */
+@media screen and (max-width: 575px) {
+
+    /* ============== LOGIN PAGE ================= */
+    .auth__container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px) {
+
+    /* ============== LOGIN PAGE ================= */
+
+    .auth{
+        display: flex;
+    }
+
+    .auth__img{
+        width: 9rem;
+        height: 100%;
+        background: url('../img/bricks.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 767px) {
+
+    /* ============== LOGIN PAGE ================= */
+    .auth__img{
+        width: 12rem;
+    }
+}
+ 
+
+/* For Large Devices  */
+@media screen and (min-width: 992px) {
+    /* ============== LOGIN PAGE ================= */
+    .auth__img{
+        width: 18rem;
+    }
+}
