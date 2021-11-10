@@ -3,6 +3,8 @@
 
 <link rel="stylesheet" href="<?= ROOT ?>/assets/css/auth.style.css">
 
+<title>Sign Up</title>
+
 </head>
 
 <body>

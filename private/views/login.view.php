@@ -2,6 +2,7 @@
 
 <link rel="stylesheet" href="<?= ROOT ?>/assets/css/auth.style.css">
 
+<title>Login</title>
 </head>
 
 <body>
