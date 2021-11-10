@@ -3,6 +3,8 @@
 
 <link rel="stylesheet" href="<?= ROOT ?>/assets/css/auth.style.css">
 
+<title>Sign Up</title>
+
 </head>
 
 <body>
@@ -22,7 +24,7 @@
                         </label>
                     </div>
                     <div class="auth__input-wrapper">
-                        <input type="text" name="authlink" placeholder="Email or Phone" class="auth__input">
+                        <input type="text" name="authlink" placeholder="Email or Phone" class="auth__input" autofocus>
                         <small class="auth__input-error"></small>
                     </div>
                     <div class="auth__input-wrapper">

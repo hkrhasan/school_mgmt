@@ -10,6 +10,7 @@
 
     /* ============== COLORS ============== */
     --first-color: #6923D0;
+    --first-color-light: #F4F0FA;
     --second-color: #F4F0FA;
     --title-color: #19181B;
     --text-color: #58555E;
@@ -131,7 +132,9 @@ img {
 
 
 @media screen and (min-width: 767px) {
-
+    body {
+        padding: 1rem 3rem 0 6rem;
+    }
 }
  
 

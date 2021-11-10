@@ -1,9 +1,10 @@
-<?php $this->view('includes/header'); ?>
+<?php
+$this->view('includes/header');
+$this->view('includes/navbar');
+?>
 
-</head>
 
-<body>
-    <main>
-        <h1>This is home View</h1>
-    </main>
-    <?php $this->view('includes/footer'); ?>
+<main>
+    <h1>This is home View</h1>
+</main>
+<?php $this->view('includes/footer'); ?>
