@@ -24,6 +24,10 @@
     border-radius: 50%;
 }
 
+.header__img img {
+    object-fit: cover;
+}
+
 .header__logo{
     color: var(--title-color);
     font-weight: var(--font-medium);

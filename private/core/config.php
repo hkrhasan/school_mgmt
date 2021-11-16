@@ -6,4 +6,9 @@ if ($_SERVER['HTTP_HOST'] == 'localhost') {
     define('ROOT', 'http://' . $_SERVER['HTTP_HOST'] . '/public');
 }
 
-// define('ROOT', )
+define('ASSETS', ROOT . '/assets');
+define('DBNAME', 'school_mgmt');
+define('DBHOST', 'localhost');
+define('DBUSER', 'root');
+define('DBPASS', '');
+define('DBDRIVER', 'mysql');

@@ -10,4 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <!--========== CSS ==========-->
-    <link rel="stylesheet" href="<?= ROOT ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?= ASSETS ?>/css/style.css">
+
+    <!-- ============= Controller Specific CSS ============= -->
+    <?php
+    $path = ASSETS . "/css/" . strtolower(get_class($this)) . ".style.css";
+    echo '<link rel="stylesheet" href=' . $path . '>';
+    ?>
