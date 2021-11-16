@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="<?= ROOT ?>/assets/css/navbar.style.css">
+<link rel="stylesheet" href="<?= ASSETS ?>/css/navbar.style.css">
 </head>
 
 <body>
@@ -6,7 +6,7 @@
     <!-- ============== Header ================= -->
     <header class="header">
         <div class="header__container">
-            <img src="<?= ROOT ?>/assets/img/profile.jpg" alt="" class="header__img" />
+            <img src="<?= ASSETS ?>/img/profile.png" alt="" class="header__img" />
 
             <a href="<?= ROOT ?>" class="header__logo">KAKSHA</a>
 
@@ -34,14 +34,19 @@
 
                 <div class="nav__list">
                     <div class="nav__items">
-                        <h3 class="nav__subtitle">Profile</h3>
+                        <h3 class="nav__subtitle">Navigation</h3>
 
-                        <a href="#" class="nav__link active">
+                        <a href="<?= ROOT ?>" class="nav__link <?= strtolower(get_class($this)) == 'home' ? 'active' : '' ?>">
                             <i class='bx bx-home nav__icon'></i>
                             <span class="nav__name">Dashboard</span>
                         </a>
 
-                        <div class="nav__dropdown">
+                        <a href="<?= ROOT ?>/profile" class="nav__link <?= strtolower(get_class($this)) == 'profile' ? 'active' : '' ?>">
+                            <i class='bx bx-user nav__icon'></i>
+                            <span class="nav__name">Profile</span>
+                        </a>
+
+                        <!-- <div class="nav__dropdown">
                             <a href="#" class="nav__link">
                                 <i class='bx bx-user nav__icon'></i>
                                 <span class="nav__name">Profile</span>
@@ -55,16 +60,16 @@
                                     <a href="#" class="nav__dropdown-item">Account</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <a href="#" class="nav__link active">
+                        <a href="<?= ROOT ?>" class="nav__link <?= strtolower(get_class($this)) == 'login' ? 'active' : '' ?>">
                             <i class='bx bx-message-rounded nav__icon'></i>
                             <span class="nav__name">Message</span>
                         </a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="nav__link nav__logout">
+            <a href="<?= ROOT ?>/logout" class="nav__link nav__logout">
                 <i class='bx bx-log-out-circle nav__icon'></i>
                 <span class="nav__logout-name">Logout</span>
             </a>

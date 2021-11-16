@@ -5,6 +5,6 @@ $this->view('includes/navbar');
 
 
 <main>
-    <h1>This is home View</h1>
+    <?= Auth::getUsername() ?>
 </main>
 <?php $this->view('includes/footer'); ?>

@@ -18,6 +18,7 @@
     --body-color: #F9F6FD;
     --container-color: #FFFFFF;
     --warning-color: #FF0000;
+    --box-shadow-color: rgba(22, 8, 43, 0.1);
 
     /* ============== FONT And TYPOGRAPHY ============== */
     --body-font: 'Poppins', sans-serif;
@@ -40,6 +41,7 @@
     --mb-1-5: 1.5rem;
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
 
 
     /*========== z index ==========*/
@@ -109,9 +111,36 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+hr {
+    color: var(--box-shadow-color);
+    border-width: .5px;
+}
   
+/* ============= CLASSES ==============  */
 
+.grid{
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: var(--mb-2);
+}
 
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* ================= BREAKPOINTS ================= */
 
@@ -133,7 +162,7 @@ img {
 
 @media screen and (min-width: 767px) {
     body {
-        padding: 1rem 3rem 0 6rem;
+        padding: 2rem 2rem 0 6rem;
     }
 }
  
